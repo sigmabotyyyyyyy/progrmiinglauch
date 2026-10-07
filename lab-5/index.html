@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторная работа №5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Карточка студента</h1>
+    <p>Лабораторная работа №5 — вариант 8</p>
+
+    <label for="name">Имя</label>
+    <input id="name" type="text" placeholder="Введите имя">
+
+    <label for="group">Группа</label>
+    <input id="group" type="text" placeholder="Например, ИС-22">
+
+    <label for="course">Курс</label>
+    <select id="course">
+      <option value="">Выберите курс</option>
+      <option value="1">1 курс</option>
+      <option value="2">2 курс</option>
+      <option value="3">3 курс</option>
+      <option value="4">4 курс</option>
+    </select>
+
+    <button id="createBtn">Создать карточку</button>
+    <button id="themeBtn" class="secondary">Сменить оформление</button>
+
+    <div id="output"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

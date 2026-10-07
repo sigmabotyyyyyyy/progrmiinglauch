@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторная работа №4</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Заказ товара</h1>
+    <p>Лабораторная работа №4 — вариант 8</p>
+
+    <form id="orderForm" novalidate>
+      <label for="product">Товар</label>
+      <select id="product">
+        <option value="">Выберите товар</option>
+        <option value="keyboard">Клавиатура — 25000 ₸</option>
+        <option value="mouse">Мышь — 12000 ₸</option>
+        <option value="headphones">Наушники — 18000 ₸</option>
+      </select>
+      <div class="error" id="productError"></div>
+
+      <label for="quantity">Количество</label>
+      <input id="quantity" type="number" min="1" placeholder="Например, 2">
+      <div class="error" id="quantityError"></div>
+
+      <label>Способ доставки</label>
+      <div class="options">
+        <label><input type="radio" name="delivery" value="pickup"> Самовывоз</label>
+        <label><input type="radio" name="delivery" value="courier"> Курьер</label>
+      </div>
+      <div class="error" id="deliveryError"></div>
+
+      <label>Дополнительные услуги</label>
+      <div class="options">
+        <label><input type="checkbox" name="extra" value="gift"> Подарочная упаковка</label>
+        <label><input type="checkbox" name="extra" value="setup"> Настройка</label>
+      </div>
+
+      <button type="submit">Оформить заказ</button>
+    </form>
+
+    <div id="result"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
